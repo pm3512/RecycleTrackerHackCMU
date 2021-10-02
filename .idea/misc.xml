@@ -3,28 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/3nnem/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/activity_main.xml" value="0.13229166666666667" />
-        <entry key="..\:/Users/3nnem/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_entry.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/3nnem/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_home.xml" value="0.13229166666666667" />
-        <entry key="..\:/Users/3nnem/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_searchbar.xml" value="0.2" />
-        <entry key="..\:/Users/3nnem/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/menu/menu.xml" value="0.13229166666666667" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/drawable-anydpi-v24/backArrow.xml" value="0.23489583333333333" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/drawable-anydpi/backArrowBlack.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/drawable/back.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/drawable/layout_bg.xml" value="0.23489583333333333" />
+        <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/drawable/layout_bg_notround.xml" value="0.25052083333333336" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/activity_main.xml" value="0.21875" />
+        <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_entry.xml" value="0.225" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_guide.xml" value="0.21666666666666667" />
         <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_stats.xml" value="0.22239583333333332" />
+        <entry key="..\:/Users/ethan/AndroidStudioProjects/RecycleTrackerHackCMU/app/src/main/res/layout/fragment_stats_personal.xml" value="0.22239583333333332" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.21614583333333334" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_global.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_guide.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2" />
-        <entry key="app/src/main/res/layout/fragment_stats_personal.xml" value="0.2" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.2" />
-        <entry key="app/src/main/res/xml/back.xml" value="0.2" />
-        <entry key="app/src/main/res/xml/line_point_formater_with_labels.xml" value="0.2" />
-        <entry key="app/src/main/res/xml/line_point_formater_with_labels2.xml" value="0.2" />
-        <entry key="app/src/main/res/xml/line_point_formater_with_labels3.xml" value="0.2" />
       </map>
     </option>
   </component>
