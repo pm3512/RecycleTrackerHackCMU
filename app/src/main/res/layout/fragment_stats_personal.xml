@@ -5,47 +5,53 @@
     android:orientation="vertical"
     android:background="#F6F6F6"
     >
+
     <Button
+        android:id="@+id/switch_to_global"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.15"
         android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="sans-serif"
         android:text="View global statistics"
-        android:textSize="20dp"
-        android:fontFamily="sans-serif"
-        android:id="@+id/switch_to_global"
-        ></Button>
+        android:textSize="20dp"></Button>
+
     <TextView
-        android:layout_height="0dp"
-        android:layout_weight="0.07"
         android:layout_width="match_parent"
-        android:text="Total trash recycled: 420 lbs"
-        android:textSize="16dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="0.07"
         android:background="@drawable/back"
         android:fontFamily="sans-serif"
-        >
-    </TextView>
+        android:paddingBottom="2dp"
+        android:text="  Total trash recycled: 420 lbs"
+        android:textAlignment="textStart"
+        android:textSize="16dp"></TextView>
+
     <TextView
-        android:layout_height="0dp"
-        android:layout_weight="0.07"
         android:layout_width="match_parent"
-        android:text="Most often recycled: RedBull can (20oz)"
-        android:textSize="16dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="0.07"
         android:background="@drawable/back"
         android:fontFamily="sans-serif"
-        >
+        android:paddingBottom="2dp"
+        android:text="  Most often recycled: RedBull can (20oz)"
+        android:textAlignment="textStart"
+        android:textSize="16dp">
 
     </TextView>
+
     <TextView
-        android:layout_height="0dp"
-        android:layout_weight="0.07"
         android:layout_width="match_parent"
-        android:text="Recycling percentile: 94.6%"
-        android:textSize="16dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="0.07"
         android:background="@drawable/back"
         android:fontFamily="sans-serif"
-        >
-    </TextView>
+        android:text="  Recycling percentile: 94.6%"
+        android:textAlignment="textStart"
+        android:textSize="16dp"></TextView>
     <com.androidplot.xy.XYPlot
         android:id="@+id/plot"
         android:theme="@style/APDefacto.Light"
