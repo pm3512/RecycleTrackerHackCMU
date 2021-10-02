@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">RecycleTracker</string>
+
+    <string-array name="recyclables">
+        <item>All</item>
+        <item>Plastic</item>
+        <item>Paper</item>
+        <item>Metal</item>
+    </string-array>
 </resources>
