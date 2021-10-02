@@ -31,11 +31,11 @@ public class GlobalFragment extends Fragment {
     public GlobalFragment() {
         // Required empty public constructor
         String[] names = {"Olivia", "Liam", "Emma", "Noah", "Amelia", "Oliver", "Ava", "Elijah",
-                "Sophia", "Lucas", "Charlotte", "Mason", "Isabella", "Levi", "Mia", "Asher", "Luna",
+                "Sophia", "Lucas", "Charlotte", "Mason", "Isabella", "Levi", "Mia (you)", "Asher", "Luna",
                 "James", "Harper", "Mateo"};
-        int[] plastic = {17, 26, 15, 24, 18, 27, 22, 16, 24, 25, 19, 25, 22, 22, 18, 20, 17, 23, 20, 16};
-        int[] metal = {27, 32, 39, 30, 31, 19, 31, 27, 28, 21, 46, 34, 40, 26, 23, 37, 26, 23, 24, 35};
-        int[] paper = {22, 15, 5, 13, 10, 11, 27, 10, 18, 17, 5, 8, 12, 7, 13, 10, 14, 19, 16, 9};
+        int[] plastic = {17, 26, 15, 24, 18, 27, 22, 16, 24, 25, 19, 25, 22, 22, 27, 20, 17, 23, 20, 16};
+        int[] metal = {27, 32, 39, 30, 31, 19, 31, 27, 28, 21, 46, 34, 40, 26, 25, 37, 26, 23, 24, 35};
+        int[] paper = {22, 15, 5, 13, 10, 11, 27, 10, 18, 17, 5, 8, 12, 7, 14, 10, 14, 19, 16, 9};
 
         users = new User[20];
         for (int i = 0; i < 20; i++) {
@@ -121,7 +121,7 @@ public class GlobalFragment extends Fragment {
 
         int rank = 1;
         for (int i = 0; i < 20; i++) {
-            if (users[i].getID().equals("Mia")) {
+            if (users[i].getID().equals("Mia (you)")) {
                 break;
             }
             rank++;
