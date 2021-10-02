@@ -21,8 +21,10 @@ import androidx.navigation.fragment.NavHostFragment;
 
 public class searchbarFragment extends Fragment {
     ListView listView;
-    String[] objects = {"Plastic Bottle 1 litre", "Plastic Bottle 500 ml", "Aluminum Can", "Paper",
-            "Cardboard Box", "Glass Bottle 125 mL", "Glass Bottle 500 mL", "Glass Bottle 1000mL"};
+    String[] objects = {"Plastic Bottle 1 litre", "Plastic Bottle 8 oz", "Plastic Bottle 12 oz",
+            "Plastic Bottle 500 ml","Plastic Bottle 20 oz","Plastic Bottle 24 oz", "Aluminum Can 6.75 oz", "Paper",
+            "Cardboard Box", "Glass Bottle 125 mL", "Glass Bottle 500 mL", "Glass Bottle 1000mL", "Aluminum Can 8 oz",
+            "Aluminum Can 8.4 oz", "Aluminum Can 16 oz","Aluminum Can 20oz", "Aluminum Can 24 oz"};
     ArrayAdapter<String> arrayAdapter;
 
     public searchbarFragment() {

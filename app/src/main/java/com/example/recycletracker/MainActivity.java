@@ -9,12 +9,15 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.os.*;
 
 
 
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     private ActionBar toolbar;
+    Handler h = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +38,19 @@ public class MainActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
 
         toolbar.setTitle("Home");
-        loadFragment(new HomeFragment());
         navigation.getMenu().getItem(1).setChecked(true);
+
+        toolbar.hide();
+
+
+        h.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                loadFragment(new HomeFragment());
+                toolbar.show();
+
+            }
+        }, 5000);
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener

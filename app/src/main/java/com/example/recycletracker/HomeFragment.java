@@ -68,7 +68,7 @@ public class HomeFragment extends Fragment {
     }*/
 
     private void swapFragment(){
-        StatsFragment newEntryFragment = new StatsFragment();
+        EntryFragment newEntryFragment = new EntryFragment();
         FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
         fragmentTransaction.replace(R.id.container, newEntryFragment);
         fragmentTransaction.addToBackStack(null);

@@ -4,43 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A">
-
-    <TextView
-        android:id="@+id/recycleType"
-        android:layout_width="150sp"
-        android:layout_height="48dp"
-        android:text="Object Type:"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/typeSpinner"
-        app:layout_constraintEnd_toStartOf="@+id/typeSpinner" />
+    android:background="#FFFDD0">
 
     <Spinner
         android:id="@+id/typeSpinner"
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:backgroundTint="@android:color/white"
+        android:dropDownSelector="@color/black"
+        android:foregroundTint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintHorizontal_bias="0.754"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183" />
+        app:layout_constraintVertical_bias="0.512" />
 
     <TextView
         android:id="@+id/objectName"
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:text="Object Name: "
-        android:textColor="@android:color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/nameText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/nameText"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.957"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/recycleType"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.635" />
 
     <EditText
         android:id="@+id/weightText"
@@ -56,29 +48,28 @@
         app:layout_constraintHorizontal_bias="0.747"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/typeSpinner"
-        app:layout_constraintVertical_bias="0.567" />
+        app:layout_constraintVertical_bias="0.687" />
 
     <EditText
         android:id="@+id/nameText"
         android:layout_width="150dp"
         android:layout_height="48dp"
+        android:layout_marginEnd="64dp"
         android:background="@android:color/white"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@android:color/black"
         app:layout_constraintBottom_toTopOf="@+id/weightText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/recycleType"
         app:layout_constraintTop_toBottomOf="@+id/typeSpinner"
-        app:layout_constraintVertical_bias="0.522" />
+        app:layout_constraintVertical_bias="0.495" />
 
     <TextView
         android:id="@+id/objectWeight"
         android:layout_width="150dp"
         android:layout_height="48dp"
         android:text="Object Weight:"
-        android:textColor="@android:color/white"
+        android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/weightText"
         app:layout_constraintEnd_toStartOf="@+id/weightText"
@@ -97,12 +88,13 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.792" />
+        app:layout_constraintVertical_bias="0.945" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
         android:text="Back"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -116,6 +108,7 @@
         android:id="@+id/searchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_orange_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.958"
@@ -123,5 +116,48 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022"
         app:srcCompat="@drawable/ic_stat_name" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Object Type"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What Did\nYou"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RECYCLE?"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.256" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
