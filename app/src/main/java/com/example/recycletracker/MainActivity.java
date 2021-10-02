@@ -3,14 +3,23 @@ package com.example.recycletracker;
 
 import androidx.annotation.NonNull;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+
 
 public class MainActivity extends AppCompatActivity {
+
 
     private ActionBar toolbar;
 
@@ -59,4 +68,5 @@ public class MainActivity extends AppCompatActivity {
         transaction.addToBackStack(null);
         transaction.commit();
     }
+
 }

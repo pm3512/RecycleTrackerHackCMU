@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A">
+
+    <TextView
+        android:id="@+id/recycleType"
+        android:layout_width="150sp"
+        android:layout_height="48dp"
+        android:text="Object Type:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/typeSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/typeSpinner" />
+
+    <Spinner
+        android:id="@+id/typeSpinner"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.183" />
+
+    <TextView
+        android:id="@+id/objectName"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Object Name: "
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nameText"
+        app:layout_constraintEnd_toStartOf="@+id/nameText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recycleType"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/weightText"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="112dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/typeSpinner"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toTopOf="@+id/weightText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/recycleType"
+        app:layout_constraintTop_toBottomOf="@+id/typeSpinner"
+        app:layout_constraintVertical_bias="0.522" />
+
+    <TextView
+        android:id="@+id/objectWeight"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:text="Object Weight:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/weightText"
+        app:layout_constraintEnd_toStartOf="@+id/weightText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/objectName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.792" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022"
+        app:srcCompat="@drawable/ic_stat_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
