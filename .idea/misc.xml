@@ -7,7 +7,12 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_guide.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_stats_personal.xml" value="0.2" />
         <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.2" />
+        <entry key="app/src/main/res/xml/back.xml" value="0.2" />
+        <entry key="app/src/main/res/xml/line_point_formater_with_labels.xml" value="0.2" />
+        <entry key="app/src/main/res/xml/line_point_formater_with_labels2.xml" value="0.2" />
+        <entry key="app/src/main/res/xml/line_point_formater_with_labels3.xml" value="0.2" />
       </map>
     </option>
   </component>
