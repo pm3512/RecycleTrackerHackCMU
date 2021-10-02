@@ -1,9 +1,18 @@
 <resources>
     <string name="app_name">RecycleTracker</string>
 
+
     <string-array name="objectTypes">
         <item>Plastic</item>
         <item>Paper</item>
         <item>Aluminum</item>
+    </string-array>
+
+    <string-array name="recyclables">
+        <item>All</item>
+        <item>Plastic</item>
+        <item>Paper</item>
+        <item>Metal</item>
+
     </string-array>
 </resources>
