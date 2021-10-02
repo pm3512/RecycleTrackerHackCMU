@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     return true;
                 case R.id.stats:
                     toolbar.setTitle("Statistics");
-                    loadFragment(new StatsFragment());
+                    loadFragment(new GlobalFragment());
                     return true;
             }
             return false;
