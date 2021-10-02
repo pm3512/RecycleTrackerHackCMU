@@ -9,20 +9,21 @@
     <Button
         android:id="@+id/switch_to_local"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:backgroundTint="#4CAF50"
+        android:layout_height="85dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:fontFamily="sans-serif"
         android:text="View Local Statistics"
+        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:rippleColor="#AA5757" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/Showstatsfor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="100dp"
         android:text="Show stats for:"
         app:layout_constraintBottom_toTopOf="@+id/Leaderboard"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +36,7 @@
         android:id="@+id/SelectType"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="100dp"
         android:layout_marginEnd="85dp"
         app:layout_constraintBottom_toTopOf="@+id/Leaderboard"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,9 +47,9 @@
 
     <TextView
         android:id="@+id/Leaderboard"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="130dp"
         android:background="#3F51B5"
         android:gravity="center"
         android:text="Leaderboard"
@@ -60,7 +61,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="120dp"
         android:background="#6675D8"
         android:orientation="horizontal"
@@ -71,7 +72,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -121,7 +122,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -170,7 +171,7 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="120dp"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
@@ -222,9 +223,9 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="300dp"
+        android:layout_width="360dp"
         android:layout_height="75dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:background="#FF5858"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -244,14 +245,15 @@
         <TextView
             android:id="@+id/userrank"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
             android:text="You are rank ____ of ____"
             android:textAlignment="center" />
 
         <TextView
             android:id="@+id/percentile"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="25dp"
+            android:gravity="center"
             android:text="You've recycled more than ____% of people using this app"
             android:textAlignment="center" />
     </LinearLayout>
