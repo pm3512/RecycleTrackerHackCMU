@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -63,6 +64,14 @@ public class GlobalFragment extends Fragment {
 
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) { }
+        });
+
+        Button button = (Button) view.findViewById(R.id.switch_to_local);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swapFragment();
+            }
         });
 
         return view;
@@ -177,5 +186,12 @@ public class GlobalFragment extends Fragment {
             }
             return 0;
         }
+    }
+    private void swapFragment(){
+        StatsPersonalFragment newEntryFragment = new StatsPersonalFragment();
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container, newEntryFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }

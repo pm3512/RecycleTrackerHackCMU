@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.androidplot.ui.DynamicTableModel;
 import com.androidplot.ui.TableOrder;
@@ -97,6 +99,22 @@ public class StatsPersonalFragment extends Fragment {
                 return null;
             }
         });
+
+        Button button = (Button) view.findViewById(R.id.switch_to_global);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                swapFragment();
+            }
+        });
+
         return view;
+    }
+    private void swapFragment(){
+        GlobalFragment newEntryFragment = new GlobalFragment();
+        FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
+        fragmentTransaction.replace(R.id.container, newEntryFragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
     }
 }
